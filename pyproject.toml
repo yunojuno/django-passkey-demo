@@ -20,28 +20,22 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
 ]
-packages = [{ include = "my_app" }]
+packages = [{ include = "passkeys" }]
 
 [tool.poetry.dependencies]
 # injected into runtime.txt so must be exact
-python = "3.10.6"
+python = "3.11.4"
 django = "^4.0"
 dj-database-url = "*"
-psycopg2 = "*"
-whitenoise = "*"
 gunicorn = "*"
+psycopg2 = "*"
+py-webauthn = "*"
+whitenoise = "*"
 
 [tool.poetry.dev-dependencies]
 black = "*"
 coverage = "*"
-flake8 = "^3.9"
-flake8-bandit = "*"
-flake8-blind-except = "*"
-flake8-docstrings = "*"
-flake8-logging-format = "*"
-flake8-print = "*"
 freezegun = "*"
-isort = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
